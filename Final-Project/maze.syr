@@ -1,0 +1,1140 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: maze.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "maze.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "maze"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : maze
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\.Xilinx\Lab4_char_carol_nihar_11.30\gamelogic.v" into library work
+Parsing module <game_logic>.
+Analyzing Verilog file "C:\.Xilinx\Lab4_char_carol_nihar_11.30\vga.v" into library work
+Parsing module <vga>.
+Analyzing Verilog file "C:\.Xilinx\Lab4_char_carol_nihar_11.30\step_to_seg7.v" into library work
+Parsing module <step_to_seg7>.
+Analyzing Verilog file "C:\.Xilinx\Lab4_char_carol_nihar_11.30\seg7decimal.v" into library work
+Parsing module <seg7decimal>.
+Analyzing Verilog file "C:\.Xilinx\Lab4_char_carol_nihar_11.30\debouncer.v" into library work
+Parsing module <debouncer>.
+Analyzing Verilog file "C:\.Xilinx\Lab4_char_carol_nihar_11.30\clockdiv.v" into library work
+Parsing module <clockdiv>.
+Analyzing Verilog file "C:\.Xilinx\Lab4_char_carol_nihar_11.30\maze.v" into library work
+Parsing module <maze>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <maze>.
+
+Elaborating module <debouncer>.
+
+Elaborating module <clockdiv>.
+WARNING:HDLCompiler:413 - "C:\.Xilinx\Lab4_char_carol_nihar_11.30\clockdiv.v" Line 27: Result of 18-bit expression is truncated to fit in 17-bit target.
+WARNING:HDLCompiler:1127 - "C:\.Xilinx\Lab4_char_carol_nihar_11.30\maze.v" Line 65: Assignment to segclk ignored, since the identifier is never used
+
+Elaborating module <vga>.
+
+Elaborating module <game_logic>.
+WARNING:HDLCompiler:413 - "C:\.Xilinx\Lab4_char_carol_nihar_11.30\gamelogic.v" Line 49: Result of 192-bit expression is truncated to fit in 180-bit target.
+WARNING:HDLCompiler:413 - "C:\.Xilinx\Lab4_char_carol_nihar_11.30\gamelogic.v" Line 126: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\.Xilinx\Lab4_char_carol_nihar_11.30\gamelogic.v" Line 148: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\.Xilinx\Lab4_char_carol_nihar_11.30\gamelogic.v" Line 171: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\.Xilinx\Lab4_char_carol_nihar_11.30\gamelogic.v" Line 193: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\.Xilinx\Lab4_char_carol_nihar_11.30\vga.v" Line 108: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\.Xilinx\Lab4_char_carol_nihar_11.30\vga.v" Line 117: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\.Xilinx\Lab4_char_carol_nihar_11.30\vga.v" Line 129: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\.Xilinx\Lab4_char_carol_nihar_11.30\vga.v" Line 130: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <step_to_seg7>.
+WARNING:HDLCompiler:413 - "C:\.Xilinx\Lab4_char_carol_nihar_11.30\step_to_seg7.v" Line 22: Result of 16-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <seg7decimal>.
+WARNING:HDLCompiler:413 - "C:\.Xilinx\Lab4_char_carol_nihar_11.30\seg7decimal.v" Line 86: Result of 21-bit expression is truncated to fit in 20-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <maze>.
+    Related source file is "C:\.Xilinx\Lab4_char_carol_nihar_11.30\maze.v".
+INFO:Xst:3210 - "C:\.Xilinx\Lab4_char_carol_nihar_11.30\maze.v" line 62: Output port <segclk> of the instance <U1> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <maze> synthesized.
+
+Synthesizing Unit <debouncer>.
+    Related source file is "C:\.Xilinx\Lab4_char_carol_nihar_11.30\debouncer.v".
+    Found 1-bit register for signal <button_sync_1>.
+    Found 16-bit register for signal <button_cnt>.
+    Found 1-bit register for signal <button_debounced>.
+    Found 1-bit register for signal <button_sync_0>.
+    Found 16-bit adder for signal <button_cnt[15]_GND_2_o_add_4_OUT> created at line 19.
+    Found 1-bit comparator equal for signal <button_debounced_button_sync_1_equal_4_o> created at line 15
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  19 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <debouncer> synthesized.
+
+Synthesizing Unit <clockdiv>.
+    Related source file is "C:\.Xilinx\Lab4_char_carol_nihar_11.30\clockdiv.v".
+    Found 1-bit register for signal <clk_player>.
+    Found 1-bit register for signal <clk_moving_obs>.
+    Found 32-bit register for signal <a>.
+    Found 32-bit register for signal <b>.
+    Found 17-bit register for signal <q>.
+    Found 17-bit adder for signal <q[16]_GND_3_o_add_1_OUT> created at line 27.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_5_OUT> created at line 48.
+    Found 32-bit adder for signal <b[31]_GND_3_o_add_10_OUT> created at line 71.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  83 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <clockdiv> synthesized.
+
+Synthesizing Unit <vga>.
+    Related source file is "C:\.Xilinx\Lab4_char_carol_nihar_11.30\vga.v".
+        hpixels = 800
+        vlines = 521
+        hpulse = 96
+        vpulse = 2
+        hbp = 144
+        hfp = 784
+        vbp = 31
+        vfp = 511
+    Found 10-bit register for signal <vc>.
+    Found 10-bit register for signal <hc>.
+    Found 17-bit subtractor for signal <GND_4_o_GND_4_o_sub_261_OUT> created at line 333.
+    Found 17-bit subtractor for signal <GND_4_o_GND_4_o_sub_265_OUT> created at line 333.
+    Found 11-bit adder for signal <n0374[10:0]> created at line 65.
+    Found 12-bit adder for signal <n0376[11:0]> created at line 65.
+    Found 11-bit adder for signal <n0378[10:0]> created at line 66.
+    Found 12-bit adder for signal <n0380[11:0]> created at line 66.
+    Found 10-bit adder for signal <hc[9]_GND_4_o_add_8_OUT> created at line 108.
+    Found 10-bit adder for signal <vc[9]_GND_4_o_add_10_OUT> created at line 117.
+    Found 17-bit adder for signal <n0365> created at line 333.
+    Found 17-bit adder for signal <n0371> created at line 333.
+    Found 6x4-bit multiplier for signal <PWR_4_o_player_pos_x[3]_MuLt_0_OUT> created at line 65.
+    Found 6x4-bit multiplier for signal <PWR_4_o_player_pos_y[3]_MuLt_3_OUT> created at line 66.
+    Found 10-bit comparator greater for signal <hc[9]_PWR_4_o_LessThan_8_o> created at line 107
+    Found 10-bit comparator greater for signal <vc[9]_PWR_4_o_LessThan_10_o> created at line 116
+    Found 10-bit comparator greater for signal <hc[9]_GND_4_o_LessThan_17_o> created at line 129
+    Found 10-bit comparator greater for signal <vc[9]_GND_4_o_LessThan_19_o> created at line 130
+    Found 10-bit comparator lessequal for signal <n0020> created at line 144
+    Found 10-bit comparator greater for signal <vc[9]_GND_4_o_LessThan_22_o> created at line 144
+    Found 10-bit comparator lessequal for signal <n0024> created at line 148
+    Found 10-bit comparator greater for signal <n0026> created at line 148
+    Found 10-bit comparator greater for signal <n0029> created at line 155
+    Found 10-bit comparator greater for signal <hc[9]_PWR_4_o_LessThan_26_o> created at line 155
+    Found 10-bit comparator lessequal for signal <n0033> created at line 162
+    Found 10-bit comparator greater for signal <vc[9]_GND_4_o_LessThan_29_o> created at line 162
+    Found 10-bit comparator lessequal for signal <n0037> created at line 162
+    Found 10-bit comparator greater for signal <hc[9]_GND_4_o_LessThan_32_o> created at line 172
+    Found 10-bit comparator greater for signal <n0051> created at line 179
+    Found 10-bit comparator greater for signal <vc[9]_GND_4_o_LessThan_70_o> created at line 195
+    Found 10-bit comparator greater for signal <GND_4_o_hc[9]_LessThan_79_o> created at line 203
+    Found 10-bit comparator greater for signal <hc[9]_PWR_4_o_LessThan_80_o> created at line 203
+    Found 10-bit comparator greater for signal <hc[9]_GND_4_o_LessThan_92_o> created at line 211
+    Found 10-bit comparator greater for signal <vc[9]_GND_4_o_LessThan_94_o> created at line 211
+    Found 10-bit comparator lessequal for signal <n0075> created at line 219
+    Found 10-bit comparator lessequal for signal <n0077> created at line 219
+    Found 10-bit comparator greater for signal <GND_4_o_vc[9]_LessThan_105_o> created at line 219
+    Found 10-bit comparator lessequal for signal <n0089> created at line 235
+    Found 10-bit comparator lessequal for signal <n0096> created at line 243
+    Found 10-bit comparator lessequal for signal <n0099> created at line 243
+    Found 10-bit comparator lessequal for signal <n0101> created at line 243
+    Found 10-bit comparator lessequal for signal <n0106> created at line 251
+    Found 10-bit comparator lessequal for signal <n0108> created at line 251
+    Found 10-bit comparator lessequal for signal <n0111> created at line 251
+    Found 10-bit comparator lessequal for signal <n0113> created at line 251
+    Found 10-bit comparator lessequal for signal <n0118> created at line 259
+    Found 10-bit comparator greater for signal <hc[9]_PWR_4_o_LessThan_164_o> created at line 259
+    Found 10-bit comparator greater for signal <hc[9]_PWR_4_o_LessThan_176_o> created at line 267
+    Found 10-bit comparator lessequal for signal <n0134> created at line 284
+    Found 10-bit comparator lessequal for signal <n0139> created at line 301
+    Found 10-bit comparator greater for signal <n0141> created at line 301
+    Found 10-bit comparator greater for signal <n0147> created at line 309
+    Found 10-bit comparator lessequal for signal <n0152> created at line 317
+    Found 10-bit comparator lessequal for signal <n0154> created at line 317
+    Found 10-bit comparator greater for signal <vc[9]_GND_4_o_LessThan_240_o> created at line 317
+    Found 10-bit comparator lessequal for signal <n0162> created at line 325
+    Found 10-bit comparator lessequal for signal <n0168> created at line 325
+    Found 32-bit comparator lessequal for signal <n0175> created at line 333
+    Found 17-bit comparator lessequal for signal <n0178> created at line 333
+    Found 32-bit comparator lessequal for signal <n0182> created at line 333
+    Found 17-bit comparator lessequal for signal <n0186> created at line 333
+    Summary:
+	inferred   2 Multiplier(s).
+	inferred  10 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred  47 Comparator(s).
+	inferred  70 Multiplexer(s).
+Unit <vga> synthesized.
+
+Synthesizing Unit <game_logic>.
+    Related source file is "C:\.Xilinx\Lab4_char_carol_nihar_11.30\gamelogic.v".
+        RIGHT = 3'b000
+        LEFT = 3'b001
+        UP = 3'b010
+        DOWN = 3'b011
+        NONE = 3'b100
+        RESET = 3'b101
+        FINISH = 3'b110
+        maze = 180'b101111111111101111111111101111111111101111111111101111111111100000000111101111010111100011010111111011010111111000000001111011011101111000011101111111111101111111111101111111111111
+    Found 16-bit register for signal <steps>.
+    Found 4-bit register for signal <player_pos_y>.
+    Found 4-bit register for signal <player_pos_x>.
+    Found 32-bit register for signal <finish_timer>.
+    Found 3-bit register for signal <next_state>.
+    Found 1-bit register for signal <collision_flag>.
+    Found 1-bit register for signal <finish_led>.
+    Found 1-bit register for signal <moving_obs_show>.
+    Found 3-bit register for signal <curr_state>.
+    Found 4-bit subtractor for signal <player_pos_x[3]_GND_5_o_sub_80_OUT> created at line 147.
+    Found 4-bit subtractor for signal <player_pos_y[3]_GND_5_o_sub_140_OUT> created at line 192.
+    Found 4-bit adder for signal <player_pos_x[3]_GND_5_o_add_38_OUT> created at line 125.
+    Found 4-bit adder for signal <player_pos_y[3]_GND_5_o_add_109_OUT> created at line 170.
+    Found 16-bit adder for signal <steps[15]_GND_5_o_add_110_OUT> created at line 171.
+    Found 32-bit adder for signal <finish_timer[31]_GND_5_o_add_149_OUT> created at line 219.
+    Found 16x9-bit Read Only RAM for signal <_n0379>
+    Found 1-bit 11-to-1 multiplexer for signal <player_pos_y[3]_X_5_o_Mux_36_o> created at line 123.
+    Found 1-bit 11-to-1 multiplexer for signal <player_pos_y[3]_X_5_o_Mux_77_o> created at line 145.
+    Found 1-bit 11-to-1 multiplexer for signal <player_pos_y[3]_X_5_o_Mux_107_o> created at line 168.
+    Found 1-bit 11-to-1 multiplexer for signal <player_pos_y[3]_X_5_o_Mux_137_o> created at line 190.
+    Found 4-bit comparator greater for signal <player_pos_x[3]_PWR_5_o_LessThan_14_o> created at line 123
+    Found 4-bit comparator greater for signal <GND_5_o_player_pos_x[3]_LessThan_55_o> created at line 145
+    Found 4-bit comparator greater for signal <player_pos_y[3]_PWR_5_o_LessThan_96_o> created at line 168
+    Found 4-bit comparator greater for signal <GND_5_o_player_pos_y[3]_LessThan_126_o> created at line 190
+    Found 32-bit comparator lessequal for signal <n0114> created at line 210
+    Summary:
+	inferred   1 RAM(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred  65 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred  16 Multiplexer(s).
+Unit <game_logic> synthesized.
+
+Synthesizing Unit <step_to_seg7>.
+    Related source file is "C:\.Xilinx\Lab4_char_carol_nihar_11.30\step_to_seg7.v".
+    Found 8-bit register for signal <seg7_rep>.
+    WARNING:Xst:2404 -  FFs/Latches <seg7_rep<15:8>> (without init value) have a constant value of 0 in block <step_to_seg7>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <step_to_seg7> synthesized.
+
+Synthesizing Unit <div_16u_4u>.
+    Related source file is "".
+    Found 20-bit adder for signal <GND_9_o_b[3]_add_1_OUT> created at line 0.
+    Found 19-bit adder for signal <GND_9_o_b[3]_add_3_OUT> created at line 0.
+    Found 18-bit adder for signal <GND_9_o_b[3]_add_5_OUT> created at line 0.
+    Found 17-bit adder for signal <GND_9_o_b[3]_add_7_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_b[3]_add_9_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_9_o_add_11_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_9_o_add_13_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_9_o_add_15_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_9_o_add_17_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_9_o_add_19_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_9_o_add_21_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_9_o_add_23_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_9_o_add_25_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_9_o_add_27_OUT[15:0]> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_9_o_add_29_OUT[15:0]> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_9_o_add_31_OUT[15:0]> created at line 0.
+    Found 20-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 19-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 18-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 17-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Summary:
+	inferred  16 Adder/Subtractor(s).
+	inferred  17 Comparator(s).
+	inferred 211 Multiplexer(s).
+Unit <div_16u_4u> synthesized.
+
+Synthesizing Unit <mod_16u_4u>.
+    Related source file is "".
+    Found 20-bit adder for signal <GND_10_o_b[3]_add_1_OUT> created at line 0.
+    Found 19-bit adder for signal <GND_10_o_b[3]_add_3_OUT> created at line 0.
+    Found 18-bit adder for signal <GND_10_o_b[3]_add_5_OUT> created at line 0.
+    Found 17-bit adder for signal <GND_10_o_b[3]_add_7_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_b[3]_add_9_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_11_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_13_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_15_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_17_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_19_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_21_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_23_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_25_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_27_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_29_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_31_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_33_OUT> created at line 0.
+    Found 20-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 19-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 18-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 17-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Summary:
+	inferred  17 Adder/Subtractor(s).
+	inferred  17 Comparator(s).
+	inferred 257 Multiplexer(s).
+Unit <mod_16u_4u> synthesized.
+
+Synthesizing Unit <seg7decimal>.
+    Related source file is "C:\.Xilinx\Lab4_char_carol_nihar_11.30\seg7decimal.v".
+    Found 20-bit register for signal <clkdiv>.
+    Found 4-bit register for signal <digit>.
+    Found 20-bit adder for signal <clkdiv[19]_GND_11_o_add_15_OUT> created at line 86.
+    Found 16x7-bit Read Only RAM for signal <a_to_g>
+    Found 4-bit 4-to-1 multiplexer for signal <s[1]_x[15]_wide_mux_3_OUT> created at line 35.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <seg7decimal> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port Read Only RAM                    : 1
+ 16x9-bit single-port Read Only RAM                    : 1
+# Multipliers                                          : 2
+ 6x4-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 57
+ 10-bit adder                                          : 2
+ 11-bit adder                                          : 2
+ 12-bit adder                                          : 2
+ 16-bit adder                                          : 30
+ 17-bit adder                                          : 5
+ 17-bit subtractor                                     : 2
+ 18-bit adder                                          : 2
+ 19-bit adder                                          : 2
+ 20-bit adder                                          : 3
+ 32-bit adder                                          : 3
+ 4-bit adder                                           : 2
+ 4-bit subtractor                                      : 2
+# Registers                                            : 35
+ 1-bit register                                        : 17
+ 10-bit register                                       : 2
+ 16-bit register                                       : 5
+ 17-bit register                                       : 1
+ 20-bit register                                       : 1
+ 3-bit register                                        : 2
+ 32-bit register                                       : 3
+ 4-bit register                                        : 3
+ 8-bit register                                        : 1
+# Comparators                                          : 90
+ 1-bit comparator equal                                : 4
+ 10-bit comparator greater                             : 22
+ 10-bit comparator lessequal                           : 21
+ 16-bit comparator lessequal                           : 26
+ 17-bit comparator lessequal                           : 4
+ 18-bit comparator lessequal                           : 2
+ 19-bit comparator lessequal                           : 2
+ 20-bit comparator lessequal                           : 2
+ 32-bit comparator lessequal                           : 3
+ 4-bit comparator greater                              : 4
+# Multiplexers                                         : 557
+ 1-bit 11-to-1 multiplexer                             : 4
+ 1-bit 2-to-1 multiplexer                              : 464
+ 10-bit 2-to-1 multiplexer                             : 2
+ 16-bit 2-to-1 multiplexer                             : 4
+ 2-bit 2-to-1 multiplexer                              : 23
+ 3-bit 2-to-1 multiplexer                              : 51
+ 32-bit 2-to-1 multiplexer                             : 3
+ 4-bit 2-to-1 multiplexer                              : 5
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <clockdiv>.
+The following registers are absorbed into counter <b>: 1 register on signal <b>.
+The following registers are absorbed into counter <a>: 1 register on signal <a>.
+The following registers are absorbed into counter <q>: 1 register on signal <q>.
+Unit <clockdiv> synthesized (advanced).
+
+Synthesizing (advanced) Unit <debouncer>.
+The following registers are absorbed into counter <button_cnt>: 1 register on signal <button_cnt>.
+Unit <debouncer> synthesized (advanced).
+
+Synthesizing (advanced) Unit <game_logic>.
+The following registers are absorbed into counter <steps>: 1 register on signal <steps>.
+The following registers are absorbed into counter <finish_timer>: 1 register on signal <finish_timer>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0379> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 9-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <player_pos_x>  |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <game_logic> synthesized (advanced).
+
+Synthesizing (advanced) Unit <seg7decimal>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+INFO:Xst:3231 - The small RAM <Mram_a_to_g> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <digit>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <a_to_g>        |          |
+    -----------------------------------------------------------------------
+Unit <seg7decimal> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga>.
+The following registers are absorbed into counter <hc>: 1 register on signal <hc>.
+The following registers are absorbed into counter <vc>: 1 register on signal <vc>.
+	Multiplier <Mmult_PWR_4_o_player_pos_x[3]_MuLt_0_OUT> in block <vga> and adder/subtractor <Madd_n0376[11:0]1> in block <vga> are combined into a MAC<Maddsub_PWR_4_o_player_pos_x[3]_MuLt_0_OUT>.
+	Multiplier <Mmult_PWR_4_o_player_pos_y[3]_MuLt_3_OUT> in block <vga> and adder/subtractor <Madd_n0380[11:0]1> in block <vga> are combined into a MAC<Maddsub_PWR_4_o_player_pos_y[3]_MuLt_3_OUT>.
+Unit <vga> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 16x9-bit single-port distributed Read Only RAM        : 1
+# MACs                                                 : 2
+ 6x4-to-12-bit MAC                                     : 2
+# Adders/Subtractors                                   : 41
+ 16-bit adder                                          : 32
+ 17-bit adder                                          : 2
+ 17-bit subtractor                                     : 2
+ 4-bit adder                                           : 3
+ 4-bit subtractor                                      : 2
+# Counters                                             : 12
+ 10-bit up counter                                     : 2
+ 16-bit up counter                                     : 5
+ 17-bit up counter                                     : 1
+ 20-bit up counter                                     : 1
+ 32-bit up counter                                     : 3
+# Registers                                            : 43
+ Flip-Flops                                            : 43
+# Comparators                                          : 90
+ 1-bit comparator equal                                : 4
+ 10-bit comparator greater                             : 22
+ 10-bit comparator lessequal                           : 21
+ 16-bit comparator lessequal                           : 26
+ 17-bit comparator lessequal                           : 4
+ 18-bit comparator lessequal                           : 2
+ 19-bit comparator lessequal                           : 2
+ 20-bit comparator lessequal                           : 2
+ 32-bit comparator lessequal                           : 3
+ 4-bit comparator greater                              : 4
+# Multiplexers                                         : 551
+ 1-bit 11-to-1 multiplexer                             : 4
+ 1-bit 2-to-1 multiplexer                              : 464
+ 16-bit 2-to-1 multiplexer                             : 3
+ 2-bit 2-to-1 multiplexer                              : 23
+ 3-bit 2-to-1 multiplexer                              : 51
+ 4-bit 2-to-1 multiplexer                              : 5
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <U1/q_2> of sequential type is unconnected in block <maze>.
+WARNING:Xst:2677 - Node <U1/q_3> of sequential type is unconnected in block <maze>.
+WARNING:Xst:2677 - Node <U1/q_4> of sequential type is unconnected in block <maze>.
+WARNING:Xst:2677 - Node <U1/q_5> of sequential type is unconnected in block <maze>.
+WARNING:Xst:2677 - Node <U1/q_6> of sequential type is unconnected in block <maze>.
+WARNING:Xst:2677 - Node <U1/q_7> of sequential type is unconnected in block <maze>.
+WARNING:Xst:2677 - Node <U1/q_8> of sequential type is unconnected in block <maze>.
+WARNING:Xst:2677 - Node <U1/q_9> of sequential type is unconnected in block <maze>.
+WARNING:Xst:2677 - Node <U1/q_10> of sequential type is unconnected in block <maze>.
+WARNING:Xst:2677 - Node <U1/q_11> of sequential type is unconnected in block <maze>.
+WARNING:Xst:2677 - Node <U1/q_12> of sequential type is unconnected in block <maze>.
+WARNING:Xst:2677 - Node <U1/q_13> of sequential type is unconnected in block <maze>.
+WARNING:Xst:2677 - Node <U1/q_14> of sequential type is unconnected in block <maze>.
+WARNING:Xst:2677 - Node <U1/q_15> of sequential type is unconnected in block <maze>.
+WARNING:Xst:2677 - Node <U1/q_16> of sequential type is unconnected in block <maze>.
+
+Optimizing unit <maze> ...
+
+Optimizing unit <debouncer> ...
+
+Optimizing unit <vga> ...
+
+Optimizing unit <game_logic> ...
+
+Optimizing unit <step_to_seg7> ...
+
+Optimizing unit <seg7decimal> ...
+WARNING:Xst:1710 - FF/Latch <U3/game/finish_timer_22> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_21> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_20> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_19> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_18> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_17> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_16> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_15> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_14> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_13> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_12> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_11> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_10> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_9> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_8> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_7> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_6> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_5> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_4> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U1/b_28> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U1/b_29> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U1/b_30> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U1/b_31> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U1/a_26> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U1/a_27> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U1/a_28> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U1/a_29> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U1/a_30> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U1/a_31> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_31> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_30> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_29> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_28> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_27> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_26> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_25> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_24> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/game/finish_timer_23> (without init value) has a constant value of 0 in block <maze>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <U1/b_0> in Unit <maze> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/a_0> <U1/q_0> <D/clkdiv_0> 
+INFO:Xst:2261 - The FF/Latch <U1/b_1> in Unit <maze> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/a_1> <U1/q_1> <D/clkdiv_1> 
+INFO:Xst:2261 - The FF/Latch <U1/b_2> in Unit <maze> is equivalent to the following 2 FFs/Latches, which will be removed : <U1/a_2> <D/clkdiv_2> 
+INFO:Xst:2261 - The FF/Latch <U1/b_3> in Unit <maze> is equivalent to the following 2 FFs/Latches, which will be removed : <U1/a_3> <D/clkdiv_3> 
+INFO:Xst:2261 - The FF/Latch <U1/b_4> in Unit <maze> is equivalent to the following 2 FFs/Latches, which will be removed : <U1/a_4> <D/clkdiv_4> 
+INFO:Xst:2261 - The FF/Latch <U1/b_5> in Unit <maze> is equivalent to the following 2 FFs/Latches, which will be removed : <U1/a_5> <D/clkdiv_5> 
+INFO:Xst:2261 - The FF/Latch <U1/b_6> in Unit <maze> is equivalent to the following 2 FFs/Latches, which will be removed : <U1/a_6> <D/clkdiv_6> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block maze, actual ratio is 11.
+FlipFlop U3/game/player_pos_x_0 has been replicated 3 time(s)
+FlipFlop U3/game/player_pos_x_1 has been replicated 3 time(s)
+FlipFlop U3/game/player_pos_x_2 has been replicated 3 time(s)
+FlipFlop U3/game/player_pos_x_3 has been replicated 3 time(s)
+FlipFlop U3/game/player_pos_y_0 has been replicated 3 time(s)
+FlipFlop U3/game/player_pos_y_1 has been replicated 2 time(s)
+FlipFlop U3/game/player_pos_y_2 has been replicated 3 time(s)
+FlipFlop U3/game/player_pos_y_3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <maze> :
+	Found 2-bit shift register for signal <d_left/button_sync_1>.
+	Found 2-bit shift register for signal <d_right/button_sync_1>.
+	Found 2-bit shift register for signal <d_down/button_sync_1>.
+	Found 2-bit shift register for signal <d_up/button_sync_1>.
+Unit <maze> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 220
+ Flip-Flops                                            : 220
+# Shift Registers                                      : 4
+ 2-bit shift register                                  : 4
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : maze.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1305
+#      GND                         : 1
+#      INV                         : 21
+#      LUT1                        : 135
+#      LUT2                        : 83
+#      LUT3                        : 83
+#      LUT4                        : 101
+#      LUT5                        : 123
+#      LUT6                        : 228
+#      MUXCY                       : 272
+#      MUXF7                       : 7
+#      VCC                         : 1
+#      XORCY                       : 250
+# FlipFlops/Latches                : 224
+#      FD                          : 15
+#      FDC                         : 113
+#      FDCE                        : 15
+#      FDE                         : 8
+#      FDP                         : 9
+#      FDR                         : 64
+# Shift Registers                  : 4
+#      SRLC16E                     : 4
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 28
+#      IBUF                        : 5
+#      OBUF                        : 23
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             224  out of  18224     1%  
+ Number of Slice LUTs:                  778  out of   9112     8%  
+    Number used as Logic:               774  out of   9112     8%  
+    Number used as Memory:                4  out of   2176     0%  
+       Number used as SRL:                4
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    801
+   Number with an unused Flip Flop:     577  out of    801    72%  
+   Number with an unused LUT:            23  out of    801     2%  
+   Number of fully used LUT-FF pairs:   201  out of    801    25%  
+   Number of unique control sets:        16
+
+IO Utilization: 
+ Number of IOs:                          29
+ Number of bonded IOBs:                  29  out of    232    12%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)        | Load  |
+-----------------------------------+------------------------------+-------+
+clk                                | BUFGP                        | 153   |
+U1/b_1                             | BUFG                         | 20    |
+U1/clk_player                      | BUFG                         | 54    |
+U1/clk_moving_obs                  | NONE(U3/game/moving_obs_show)| 1     |
+-----------------------------------+------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 6.338ns (Maximum Frequency: 157.781MHz)
+   Minimum input arrival time before clock: 3.626ns
+   Maximum output required time after clock: 16.237ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.757ns (frequency: 210.195MHz)
+  Total number of paths / destination ports: 3011 / 206
+-------------------------------------------------------------------------
+Delay:               4.757ns (Levels of Logic = 4)
+  Source:            U1/b_8 (FF)
+  Destination:       U1/b_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: U1/b_8 to U1/b_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.981  U1/b_8 (U1/b_8)
+     LUT6:I0->O            1   0.203   0.580  U1/b[31]_GND_3_o_equal_10_o<31>1 (U1/b[31]_GND_3_o_equal_10_o<31>)
+     LUT4:I3->O            1   0.205   0.580  U1/b[31]_GND_3_o_equal_10_o<31>2 (U1/b[31]_GND_3_o_equal_10_o<31>1)
+     LUT6:I5->O           29   0.205   1.250  U1/b[31]_GND_3_o_equal_10_o<31>6 (U1/b[31]_GND_3_o_equal_10_o)
+     LUT2:I1->O            1   0.205   0.000  U1/Mcount_b_eqn_01 (U1/Mcount_b_eqn_0)
+     FDC:D                     0.102          U1/b_0
+    ----------------------------------------
+    Total                      4.757ns (1.367ns logic, 3.390ns route)
+                                       (28.7% logic, 71.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U1/b_1'
+  Clock period: 4.571ns (frequency: 218.764MHz)
+  Total number of paths / destination ports: 1209 / 30
+-------------------------------------------------------------------------
+Delay:               4.571ns (Levels of Logic = 12)
+  Source:            U3/hc_7 (FF)
+  Destination:       U3/hc_9 (FF)
+  Source Clock:      U1/b_1 rising
+  Destination Clock: U1/b_1 rising
+
+  Data Path: U3/hc_7 to U3/hc_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             28   0.447   1.599  U3/hc_7 (U3/hc_7)
+     LUT6:I0->O           10   0.203   1.085  U3/hc[9]_PWR_4_o_LessThan_8_o_inv_inv11 (U3/hc[9]_PWR_4_o_LessThan_8_o_inv_inv1)
+     LUT5:I2->O            1   0.205   0.579  U3/hc[9]_PWR_4_o_LessThan_8_o_inv_inv12 (U3/hc[9]_PWR_4_o_LessThan_8_o_inv_inv)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcount_hc_cy<0> (U3/Mcount_hc_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcount_hc_cy<1> (U3/Mcount_hc_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcount_hc_cy<2> (U3/Mcount_hc_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcount_hc_cy<3> (U3/Mcount_hc_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcount_hc_cy<4> (U3/Mcount_hc_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcount_hc_cy<5> (U3/Mcount_hc_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcount_hc_cy<6> (U3/Mcount_hc_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcount_hc_cy<7> (U3/Mcount_hc_cy<7>)
+     MUXCY:CI->O           0   0.019   0.000  U3/Mcount_hc_cy<8> (U3/Mcount_hc_cy<8>)
+     XORCY:CI->O           1   0.180   0.000  U3/Mcount_hc_xor<9> (U3/Mcount_hc9)
+     FDC:D                     0.102          U3/hc_9
+    ----------------------------------------
+    Total                      4.571ns (1.308ns logic, 3.263ns route)
+                                       (28.6% logic, 71.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U1/clk_player'
+  Clock period: 6.338ns (frequency: 157.781MHz)
+  Total number of paths / destination ports: 4912 / 58
+-------------------------------------------------------------------------
+Delay:               6.338ns (Levels of Logic = 6)
+  Source:            U3/game/player_pos_y_0_2 (FF)
+  Destination:       U3/game/steps_15 (FF)
+  Source Clock:      U1/clk_player rising
+  Destination Clock: U1/clk_player rising
+
+  Data Path: U3/game/player_pos_y_0_2 to U3/game/steps_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              3   0.447   0.995  U3/game/player_pos_y_0_2 (U3/game/player_pos_y_0_2)
+     LUT6:I1->O            1   0.203   0.684  U3/game/_n0260<1>4_SW0 (N65)
+     LUT5:I3->O            1   0.203   0.580  U3/game/_n0260<1>4 (U3/game/_n0260<1>3)
+     LUT5:I4->O            2   0.205   0.721  U3/game/_n0260<1>8 (U3/game/_n0260<1>7)
+     LUT4:I2->O            1   0.203   0.580  U3/game/_n0260<1>18 (U3/game/_n0260)
+     LUT6:I5->O           16   0.205   1.005  U3/game/_n0266_inv9 (U3/game/_n0266_inv)
+     LUT3:I2->O            1   0.205   0.000  U3/game/steps_15_rstpot (U3/game/steps_15_rstpot)
+     FDC:D                     0.102          U3/game/steps_15
+    ----------------------------------------
+    Total                      6.338ns (1.773ns logic, 4.565ns route)
+                                       (28.0% logic, 72.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U1/clk_moving_obs'
+  Clock period: 2.163ns (frequency: 462.406MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.163ns (Levels of Logic = 1)
+  Source:            U3/game/moving_obs_show (FF)
+  Destination:       U3/game/moving_obs_show (FF)
+  Source Clock:      U1/clk_moving_obs rising
+  Destination Clock: U1/clk_moving_obs rising
+
+  Data Path: U3/game/moving_obs_show to U3/game/moving_obs_show
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.447   0.829  U3/game/moving_obs_show (U3/game/moving_obs_show)
+     INV:I->O              1   0.206   0.579  U3/game/moving_obs_show_INV_11_o1_INV_0 (U3/game/moving_obs_show_INV_11_o)
+     FDC:D                     0.102          U3/game/moving_obs_show
+    ----------------------------------------
+    Total                      2.163ns (0.755ns logic, 1.408ns route)
+                                       (34.9% logic, 65.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 66 / 66
+-------------------------------------------------------------------------
+Offset:              3.626ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       U1/clk_moving_obs (FF)
+  Destination Clock: clk rising
+
+  Data Path: clr to U1/clk_moving_obs
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           137   1.222   1.974  clr_IBUF (clr_IBUF)
+     FDC:CLR                   0.430          U1/clk_player
+    ----------------------------------------
+    Total                      3.626ns (1.652ns logic, 1.974ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U1/b_1'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              3.626ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       U3/vc_9 (FF)
+  Destination Clock: U1/b_1 rising
+
+  Data Path: clr to U3/vc_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           137   1.222   1.974  clr_IBUF (clr_IBUF)
+     FDC:CLR                   0.430          U3/hc_0
+    ----------------------------------------
+    Total                      3.626ns (1.652ns logic, 1.974ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U1/clk_player'
+  Total number of paths / destination ports: 54 / 54
+-------------------------------------------------------------------------
+Offset:              3.626ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       U3/game/finish_timer_3 (FF)
+  Destination Clock: U1/clk_player rising
+
+  Data Path: clr to U3/game/finish_timer_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           137   1.222   1.974  clr_IBUF (clr_IBUF)
+     FDCE:CLR                  0.430          U3/game/finish_led
+    ----------------------------------------
+    Total                      3.626ns (1.652ns logic, 1.974ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U1/clk_moving_obs'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.626ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       U3/game/moving_obs_show (FF)
+  Destination Clock: U1/clk_moving_obs rising
+
+  Data Path: clr to U3/game/moving_obs_show
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           137   1.222   1.974  clr_IBUF (clr_IBUF)
+     FDC:CLR                   0.430          U3/game/moving_obs_show
+    ----------------------------------------
+    Total                      3.626ns (1.652ns logic, 1.974ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 36 / 11
+-------------------------------------------------------------------------
+Offset:              4.821ns (Levels of Logic = 2)
+  Source:            D/digit_0 (FF)
+  Destination:       a_to_g<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: D/digit_0 to a_to_g<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.447   1.021  D/digit_0 (D/digit_0)
+     LUT4:I0->O            1   0.203   0.579  D/Mram_a_to_g21 (a_to_g_2_OBUF)
+     OBUF:I->O                 2.571          a_to_g_2_OBUF (a_to_g<2>)
+    ----------------------------------------
+    Total                      4.821ns (3.221ns logic, 1.600ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/b_1'
+  Total number of paths / destination ports: 11805 / 10
+-------------------------------------------------------------------------
+Offset:              12.681ns (Levels of Logic = 9)
+  Source:            U3/hc_8 (FF)
+  Destination:       blue<1> (PAD)
+  Source Clock:      U1/b_1 rising
+
+  Data Path: U3/hc_8 to blue<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             34   0.447   1.665  U3/hc_8 (U3/hc_8)
+     LUT5:I0->O            1   0.203   0.000  U3/Mcompar_GND_4_o_BUS_0045_LessThan_264_o_lut<3> (U3/Mcompar_GND_4_o_BUS_0045_LessThan_264_o_lut<3>)
+     MUXCY:S->O            1   0.366   0.827  U3/Mcompar_GND_4_o_BUS_0045_LessThan_264_o_cy<3> (U3/Mcompar_GND_4_o_BUS_0045_LessThan_264_o_cy<3>)
+     LUT4:I0->O            3   0.203   0.898  U3/Mcompar_GND_4_o_BUS_0045_LessThan_264_o_cy<4> (U3/GND_4_o_BUS_0045_LessThan_264_o)
+     LUT4:I0->O           11   0.203   1.247  U3/GND_4_o_GND_4_o_AND_201_o1 (U3/GND_4_o_GND_4_o_AND_201_o)
+     LUT6:I0->O            1   0.203   0.944  U3/GND_4_o_GND_4_o_AND_135_o3 (U3/GND_4_o_GND_4_o_AND_135_o3)
+     LUT6:I0->O            3   0.203   0.995  U3/Mmux_green21117 (U3/Mmux_green2111)
+     LUT6:I1->O            1   0.203   0.684  U3/blue<1>3 (U3/blue<1>2)
+     LUT6:I4->O            2   0.203   0.616  U3/blue<1>4 (blue_0_OBUF)
+     OBUF:I->O                 2.571          blue_1_OBUF (blue<1>)
+    ----------------------------------------
+    Total                     12.681ns (4.805ns logic, 7.876ns route)
+                                       (37.9% logic, 62.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/clk_player'
+  Total number of paths / destination ports: 204257 / 9
+-------------------------------------------------------------------------
+Offset:              16.237ns (Levels of Logic = 14)
+  Source:            U3/game/player_pos_y_0 (FF)
+  Destination:       blue<1> (PAD)
+  Source Clock:      U1/clk_player rising
+
+  Data Path: U3/game/player_pos_y_0 to blue<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q             30   0.447   1.264  U3/game/player_pos_y_0 (U3/game/player_pos_y_0)
+     LUT2:I1->O            1   0.205   0.000  U3/Maddsub_PWR_4_o_player_pos_y[3]_MuLt_3_OUT_Madd1_lut<4> (U3/Maddsub_PWR_4_o_player_pos_y[3]_MuLt_3_OUT_Madd1_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  U3/Maddsub_PWR_4_o_player_pos_y[3]_MuLt_3_OUT_Madd1_cy<4> (U3/Maddsub_PWR_4_o_player_pos_y[3]_MuLt_3_OUT_Madd1_cy<4>)
+     XORCY:CI->O          11   0.180   1.227  U3/Maddsub_PWR_4_o_player_pos_y[3]_MuLt_3_OUT_Madd1_xor<5> (U3/Maddsub_PWR_4_o_player_pos_y[3]_MuLt_3_OUT_6)
+     LUT6:I1->O            6   0.203   0.849  U3/Maddsub_PWR_4_o_player_pos_y[3]_MuLt_3_OUT_Madd_xor<9>11 (U3/Madd_n0371_lut<9>)
+     LUT2:I0->O            2   0.203   0.961  U3/Madd_n0371_xor<9>11 (U3/n0371<9>)
+     LUT5:I0->O            0   0.203   0.000  U3/Mcompar_GND_4_o_BUS_0046_LessThan_268_o_lutdi3 (U3/Mcompar_GND_4_o_BUS_0046_LessThan_268_o_lutdi3)
+     MUXCY:DI->O           1   0.339   0.827  U3/Mcompar_GND_4_o_BUS_0046_LessThan_268_o_cy<3> (U3/Mcompar_GND_4_o_BUS_0046_LessThan_268_o_cy<3>)
+     LUT4:I0->O            3   0.203   0.879  U3/Mcompar_GND_4_o_BUS_0046_LessThan_268_o_cy<4> (U3/GND_4_o_BUS_0046_LessThan_268_o)
+     LUT4:I1->O           11   0.205   1.247  U3/GND_4_o_GND_4_o_AND_201_o1 (U3/GND_4_o_GND_4_o_AND_201_o)
+     LUT6:I0->O            1   0.203   0.944  U3/GND_4_o_GND_4_o_AND_135_o3 (U3/GND_4_o_GND_4_o_AND_135_o3)
+     LUT6:I0->O            3   0.203   0.995  U3/Mmux_green21117 (U3/Mmux_green2111)
+     LUT6:I1->O            1   0.203   0.684  U3/blue<1>3 (U3/blue<1>2)
+     LUT6:I4->O            2   0.203   0.616  U3/blue<1>4 (blue_0_OBUF)
+     OBUF:I->O                 2.571          blue_1_OBUF (blue<1>)
+    ----------------------------------------
+    Total                     16.237ns (5.743ns logic, 10.494ns route)
+                                       (35.4% logic, 64.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/clk_moving_obs'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              5.784ns (Levels of Logic = 3)
+  Source:            U3/game/moving_obs_show (FF)
+  Destination:       blue<1> (PAD)
+  Source Clock:      U1/clk_moving_obs rising
+
+  Data Path: U3/game/moving_obs_show to blue<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.447   1.058  U3/game/moving_obs_show (U3/game/moving_obs_show)
+     LUT6:I3->O            1   0.205   0.684  U3/blue<1>3 (U3/blue<1>2)
+     LUT6:I4->O            2   0.203   0.616  U3/blue<1>4 (blue_0_OBUF)
+     OBUF:I->O                 2.571          blue_1_OBUF (blue<1>)
+    ----------------------------------------
+    Total                      5.784ns (3.426ns logic, 2.358ns route)
+                                       (59.2% logic, 40.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock U1/b_1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U1/b_1         |    4.571|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U1/clk_moving_obs
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+U1/clk_moving_obs|    2.163|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U1/clk_player
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+U1/clk_moving_obs|    6.479|         |         |         |
+U1/clk_player    |    6.338|         |         |         |
+clk              |    7.155|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U1/clk_player  |   27.456|         |         |         |
+clk            |    4.757|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 19.83 secs
+ 
+--> 
+
+Total memory usage is 265596 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   67 (   0 filtered)
+Number of infos    :   11 (   0 filtered)
+

@@ -1,0 +1,4 @@
+verilog work "vga.v"
+verilog work "seven_seg_display.v"
+verilog work "clockdiv.v"
+verilog work "maze.v"

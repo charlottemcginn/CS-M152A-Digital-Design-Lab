@@ -1,0 +1,7 @@
+verilog work "gamelogic.v"
+verilog work "vga.v"
+verilog work "step_to_seg7.v"
+verilog work "seg7decimal.v"
+verilog work "debouncer.v"
+verilog work "clockdiv.v"
+verilog work "maze.v"

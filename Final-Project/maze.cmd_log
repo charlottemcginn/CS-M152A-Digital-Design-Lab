@@ -1,0 +1,201 @@
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.xst" -ofn "C:/.Xilinx/Lab4_char_carol_nihar_11.30/maze.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 maze.ngc maze.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o maze_map.ncd maze.ngd maze.pcf 
+par -w -intstyle ise -ol high -mt off maze_map.ncd maze.ncd maze.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml maze.twx maze.ncd -o maze.twr maze.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f maze.ut maze.ncd 

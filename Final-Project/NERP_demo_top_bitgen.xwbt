@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\.Xilinx\Lab4_char_carol_nihar_11.30\NERP_demo_top.ncd
+OUTFILE=C:\.Xilinx\Lab4_char_carol_nihar_11.30\NERP_demo_top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\.Xilinx\Lab4_char_carol_nihar_11.30
+LICENSE=ISE
+USER_INFO=203015155_203016297_210565169_105
